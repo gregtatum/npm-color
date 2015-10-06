@@ -1,6 +1,6 @@
 {
   "name": "@tatumcreative/color",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Work with unit interval color arrays",
   "main": "color.js",
   "directories": {
