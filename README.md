@@ -39,7 +39,7 @@ Work with unit interval color arrays valued 0-1 (for instance `[1.0, 0.5, 0.5]` 
 	rgbToStyle( r, g, b, a )
 	
 	// [0, 0, 0.5]      => "hsl(0,0,50%)"
-	// [0, 0, 0.5, 0.3] => "hsl(0,0,50%,0.3)"
+	// [0, 0, 0.5, 0.3] => "hsla(0,0,50%,0.3)"
 	
 	hslToStyle( hsl )
 	hslToStyle( h, s, l )
