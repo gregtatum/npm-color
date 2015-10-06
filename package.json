@@ -1,0 +1,22 @@
+{
+  "name": "@tatumcreative/color",
+  "version": "1.0.0",
+  "description": "Work with unit interval color arrays",
+  "main": "color.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "browserify tests/*.js | node | faucet"
+  },
+  "keywords": [
+    "color"
+  ],
+  "author": "Greg Tatum",
+  "license": "MIT",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.2.1",
+    "test-fuzzy-array": "^1.0.1"
+  }
+}
