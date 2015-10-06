@@ -48,7 +48,7 @@ Work with unit interval color arrays valued 0-1 (for instance `[1.0, 0.5, 0.5]` 
 
 #### Hex
 
-	// "#ff0000" => 0xff0000
+	// 0xff0000 => "#ff0000"
 	hexToString( hex )
 	
 	// "#ff0000" => 0xff0000
