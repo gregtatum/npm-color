@@ -4,7 +4,7 @@ Work with unit interval color arrays valued 0-1 (for instance `[1.0, 0.5, 0.5]` 
 
 ## API
 
-#### To RGB
+#### HSL
 
 	// [ 0, 1, 0.5, 0.3 ] => [ 1, 0, 0, 0.3 ]
 	hslToRgb( hsl, optionalTarget )
@@ -12,11 +12,12 @@ Work with unit interval color arrays valued 0-1 (for instance `[1.0, 0.5, 0.5]` 
 	hslToRgb( h, s, l, optionalTarget )
 	hslToRgb( h, s, l, a, optionalTarget )
 	
-	// 0xff0000 => [1,0,0]
-	hexToRgb( hex, optionalTarget )
+	// [ 0, 1, 0.5 ] => 0xff0000
+	hslToHex( h, s, l )
+	hslToHex( hsl )
 
-#### From RGB
 
+#### RGB
 
 	// [ 1, 0, 0, 0.3 ] => [ 0, 1, 0.5, 0.3 ]
 	rgbToHsl( rgb, optionalTarget )
@@ -27,6 +28,10 @@ Work with unit interval color arrays valued 0-1 (for instance `[1.0, 0.5, 0.5]` 
 	// 	[ 1, 0, 0, 0.3 ] => 0xff0000
 	rgbToHex( rgb, optionalTarget )
 	rgbToHex( r, g, b optionalTarget )
+	
+	// 0xff0000 => [1,0,0]
+	hexToRgb( hex, optionalTarget )
+
 
 #### To CSS Style
 
