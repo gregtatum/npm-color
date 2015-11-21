@@ -1,5 +1,13 @@
 # Color
 
+[![build status][travis-image]][travis-url]
+[![stability][stability-image]][stability-url]
+
+[stability-image]: https://img.shields.io/badge/stability-stable-brightgreen.svg?style=flat-square
+[stability-url]: https://nodejs.org/api/documentation.html#documentation_stability_index
+[travis-image]: https://img.shields.io/travis/TatumCreative/npm-color/master.svg?style=flat-square
+[travis-url]: http://travis-ci.org/TatumCreative/npm-color
+
 Work with unit interval color arrays valued 0-1 (for instance `[1.0, 0.5, 0.5]` for a desaturated RGB red.) The idea is create small composable functions, which can be combined as needed by the consuming application. Unit interval ranges make it easy to target a wide variety of applications. The functions provide an optional target for the result to in order to limit memory allocation as needed. If no target is provided a new array will be returned.
 
 ## API
