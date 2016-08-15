@@ -1,11 +1,21 @@
-module.exports = {
-	hslToRgb    : require('./lib/hsl-to-rgb'),
-	hslToHex    : require('./lib/hsl-to-hex'),
-	hslToStyle  : require('./lib/hsl-to-style'),
-	hexToRgb    : require('./lib/hex-to-rgb'),
-	hexToString : require('./lib/hex-to-string'),
-	rgbToHex    : require('./lib/rgb-to-hex'),
-	rgbToHsl    : require('./lib/rgb-to-hsl'),
-	rgbToStyle  : require('./lib/rgb-to-style'),
-	stringToHex : require('./lib/string-to-hex'),
+import hslToRgb from './lib/hsl-to-rgb'
+import hslToHex from './lib/hsl-to-hex'
+import hslToStyle from './lib/hsl-to-style'
+import hexToRgb from './lib/hex-to-rgb'
+import hexToString from './lib/hex-to-string'
+import rgbToHex from './lib/rgb-to-hex'
+import rgbToHsl from './lib/rgb-to-hsl'
+import rgbToStyle from './lib/rgb-to-style'
+import stringToHex from './lib/string-to-hex'
+
+export {
+  hslToRgb,
+  hslToHex,
+  hslToStyle,
+  hexToRgb,
+  hexToString,
+  rgbToHex,
+  rgbToHsl,
+  rgbToStyle,
+  stringToHex
 }

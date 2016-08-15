@@ -2,12 +2,15 @@
   "name": "@tatumcreative/color",
   "version": "1.1.3",
   "description": "Work with unit interval color arrays",
-  "main": "color.js",
+  "main": "es5.js",
+  "jsnext:main": "color.js",
+  "prepublish": "npm run build",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "browserify tests/*.js | node | faucet"
+    "test": "browserify tests/*.js -t rollupify | node | faucet",
+    "build": "browserify color.js -t rollupify > es5.js"
   },
   "keywords": [
     "color"
@@ -17,6 +20,7 @@
   "devDependencies": {
     "browserify": "^12.0.1",
     "faucet": "0.0.1",
+    "rollupify": "0.3.4",
     "tape": "^4.2.1",
     "test-fuzzy-array": "^1.0.1"
   }
