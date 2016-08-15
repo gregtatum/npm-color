@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "standard && browserify tests/*.js -t rollupify | node | faucet",
-    "build": "browserify color.js -t rollupify > es5.js"
+    "build": "rollup color.js -f cjs > es5.js"
   },
   "keywords": [
     "color"
