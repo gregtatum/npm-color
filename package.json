@@ -9,7 +9,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "browserify tests/*.js -t rollupify | node | faucet",
+    "test": "standard && browserify tests/*.js -t rollupify | node | faucet",
     "build": "browserify color.js -t rollupify > es5.js"
   },
   "keywords": [
@@ -21,6 +21,7 @@
     "browserify": "^12.0.1",
     "faucet": "0.0.1",
     "rollupify": "0.3.4",
+    "standard": "7.1.2",
     "tape": "^4.2.1",
     "test-fuzzy-array": "^1.0.1"
   }
